@@ -1,0 +1,156 @@
+{
+  "common": {
+    "readMore": "קרא עוד",
+    "learnMore": "למד עוד",
+    "register": "הרשם עכשיו",
+    "contactUs": "צור קשר",
+    "send": "שלח",
+    "loading": "טוען...",
+    "error": "שגיאה",
+    "success": "הצלחה",
+    "cancel": "ביטול",
+    "save": "שמור",
+    "edit": "ערוך",
+    "delete": "מחק",
+    "search": "חיפוש",
+    "filter": "סינון",
+    "all": "הכל"
+  },
+  "nav": {
+    "home": "בית",
+    "about": "אודות",
+    "activities": "פעילויות",
+    "blog": "בלוג",
+    "careers": "דרושים",
+    "contact": "צור קשר",
+    "tracks": "מסלולים"
+  },
+  "home": {
+    "hero": {
+      "title": "פיתוח דור העתיד בטכנולוגיה",
+      "subtitle": "קורסים, סדנאות ומחנות המותאמים לילדים, נוער, מבוגרים ואנשי חינוך",
+      "cta": "גלה את המסלולים שלנו",
+      "ctaSecondary": "צור קשר"
+    },
+    "stats": {
+      "students": "תלמידים",
+      "courses": "קורסים",
+      "instructors": "מדריכים",
+      "satisfaction": "שביעות רצון"
+    },
+    "tracks": {
+      "title": "המסלולים שלנו",
+      "subtitle": "חמישה מסלולים מותאמים לצרכים שונים בעולם הטכנולוגיה",
+      "ai": {
+        "title": "EduTech AI",
+        "description": "לימודי בינה מלאכותית וטכנולוגיות מתקדמות"
+      },
+      "kids": {
+        "title": "EduTech Kids",
+        "description": "קורסי טכנולוגיה ומחנות לילדים ונוער"
+      },
+      "pro": {
+        "title": "EduTech Pro",
+        "description": "הכשרה מקצועית למבוגרים ואנשי תעשייה"
+      },
+      "edu": {
+        "title": "EduTech Edu",
+        "description": "הכשרה ופיתוח מקצועי לאנשי חינוך"
+      },
+      "camp": {
+        "title": "EduTech Camp",
+        "description": "מחנות קיץ, מחנות טכנולוגיה ופעילויות מרוכזות"
+      }
+    },
+    "activities": {
+      "title": "פעילויות קרובות",
+      "subtitle": "הצטרף לפעילויות המובילות שלנו"
+    },
+    "testimonials": {
+      "title": "מה אומרים עלינו",
+      "subtitle": "חוות דעת של תלמידים ואנשי חינוך"
+    }
+  },
+  "activities": {
+    "title": "כל הפעילויות",
+    "types": {
+      "lecture": "הרצאה",
+      "workshop": "סדנה",
+      "course": "קורס",
+      "camp": "קייטנה",
+      "event": "אירוע"
+    },
+    "difficulty": {
+      "beginner": "מתחילים",
+      "intermediate": "מתקדמים",
+      "advanced": "מומחים"
+    },
+    "filters": {
+      "type": "סוג פעילות",
+      "track": "מסלול",
+      "difficulty": "רמת קושי",
+      "location": "מיקום"
+    },
+    "details": {
+      "duration": "משך",
+      "sessions": "מפגשים",
+      "participants": "משתתפים",
+      "price": "מחיר",
+      "location": "מיקום",
+      "dates": "תאריכים",
+      "instructor": "מדריך",
+      "prerequisites": "דרישות קדם"
+    }
+  },
+  "blog": {
+    "title": "הבלוג שלנו",
+    "subtitle": "מאמרים, מדריכים וחידושים בעולם הטכנולוגיה",
+    "readTime": "{minutes} דקות קריאה",
+    "categories": "קטגוריות",
+    "tags": "תגיות",
+    "relatedPosts": "מאמרים קשורים"
+  },
+  "contact": {
+    "title": "צור קשר",
+    "subtitle": "נשמח לשמוע ממך",
+    "form": {
+      "name": "שם מלא",
+      "email": "אימייל",
+      "phone": "טלפון",
+      "subject": "נושא",
+      "message": "הודעה",
+      "submit": "שלח הודעה"
+    },
+    "info": {
+      "address": "כתובת",
+      "phone": "טלפון",
+      "email": "אימייל",
+      "hours": "שעות פעילות"
+    }
+  },
+  "footer": {
+    "description": "מרכז הדרכה מוביל לטכנולוגיה ובינה מלאכותית בישראל",
+    "quickLinks": "קישורים מהירים",
+    "followUs": "עקוב אחרינו",
+    "newsletter": {
+      "title": "הצטרף לניוזלטר",
+      "subtitle": "קבל עדכונים על קורסים חדשים והטבות מיוחדות",
+      "placeholder": "הזן את האימייל שלך",
+      "button": "הרשם"
+    },
+    "legal": {
+      "terms": "תנאי שימוש",
+      "privacy": "מדיניות פרטיות",
+      "accessibility": "הצהרת נגישות"
+    },
+    "copyright": "© {year} EduTech. כל הזכויות שמורות"
+  },
+  "errors": {
+    "required": "שדה חובה",
+    "invalidEmail": "כתובת אימייל לא תקינה",
+    "invalidPhone": "מספר טלפון לא תקין",
+    "minLength": "מינימום {min} תווים",
+    "maxLength": "מקסימום {max} תווים",
+    "generic": "משהו השתבש, אנא נסה שנית"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "register": "Register Now",
+    "contactUs": "Contact Us",
+    "send": "Send",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "activities": "Activities",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "tracks": "Tracks"
+  },
+  "home": {
+    "hero": {
+      "title": "Developing the Future Generation in Technology",
+      "subtitle": "Courses, workshops, and camps tailored for children, teens, adults, and educators",
+      "cta": "Discover Our Tracks",
+      "ctaSecondary": "Contact Us"
+    },
+    "stats": {
+      "students": "Students",
+      "courses": "Courses",
+      "instructors": "Instructors",
+      "satisfaction": "Satisfaction"
+    },
+    "tracks": {
+      "title": "Our Tracks",
+      "subtitle": "Five tailored tracks for different needs in the world of technology",
+      "ai": {
+        "title": "EduTech AI",
+        "description": "Advanced AI and cutting-edge technology education"
+      },
+      "kids": {
+        "title": "EduTech Kids",
+        "description": "Technology courses and camps for children and teens"
+      },
+      "pro": {
+        "title": "EduTech Pro",
+        "description": "Professional training for adults and industry professionals"
+      },
+      "edu": {
+        "title": "EduTech Edu",
+        "description": "Professional development and training for educators"
+      },
+      "camp": {
+        "title": "EduTech Camp",
+        "description": "Summer camps, tech camps, and intensive programs"
+      }
+    },
+    "activities": {
+      "title": "Upcoming Activities",
+      "subtitle": "Join our leading activities"
+    },
+    "testimonials": {
+      "title": "What They Say About Us",
+      "subtitle": "Testimonials from students and educators"
+    }
+  },
+  "activities": {
+    "title": "All Activities",
+    "types": {
+      "lecture": "Lecture",
+      "workshop": "Workshop",
+      "course": "Course",
+      "camp": "Camp",
+      "event": "Event"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "filters": {
+      "type": "Activity Type",
+      "track": "Track",
+      "difficulty": "Difficulty Level",
+      "location": "Location"
+    },
+    "details": {
+      "duration": "Duration",
+      "sessions": "Sessions",
+      "participants": "Participants",
+      "price": "Price",
+      "location": "Location",
+      "dates": "Dates",
+      "instructor": "Instructor",
+      "prerequisites": "Prerequisites"
+    }
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "Articles, guides, and innovations in the world of technology",
+    "readTime": "{minutes} min read",
+    "categories": "Categories",
+    "tags": "Tags",
+    "relatedPosts": "Related Posts"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours"
+    }
+  },
+  "footer": {
+    "description": "Leading technology and AI training center in Israel",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "newsletter": {
+      "title": "Join Our Newsletter",
+      "subtitle": "Get updates on new courses and special offers",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "legal": {
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "accessibility": "Accessibility Statement"
+    },
+    "copyright": "© {year} EduTech. All rights reserved"
+  },
+  "errors": {
+    "required": "Required field",
+    "invalidEmail": "Invalid email address",
+    "invalidPhone": "Invalid phone number",
+    "minLength": "Minimum {min} characters",
+    "maxLength": "Maximum {max} characters",
+    "generic": "Something went wrong, please try again"
+  }
+}

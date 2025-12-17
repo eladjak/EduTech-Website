@@ -1,58 +1,53 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import { Cpu, Users, Code, GraduationCap, Tent } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 
 const subBrands = [
   {
     id: "ai",
-    title: "EduTech AI",
-    description: "לימודי בינה מלאכותית וטכנולוגיות מתקדמות",
     icon: Cpu,
-    color: "bg-[#7209b7]",
-    hoverColor: "hover:bg-[#7209b7]/90",
+    color: "bg-gradient-to-br from-purple-500 to-pink-500",
+    hoverColor: "hover:from-purple-600 hover:to-pink-600",
   },
   {
     id: "kids",
-    title: "EduTech Kids",
-    description: "קורסי טכנולוגיה ומחנות לילדים ונוער",
     icon: Users,
-    color: "bg-[#4cc9f0]",
-    hoverColor: "hover:bg-[#4cc9f0]/90",
+    color: "bg-gradient-to-br from-blue-500 to-cyan-500",
+    hoverColor: "hover:from-blue-600 hover:to-cyan-600",
   },
   {
     id: "pro",
-    title: "EduTech Pro",
-    description: "הכשרה מקצועית למבוגרים ואנשי תעשייה",
     icon: Code,
-    color: "bg-[#4361ee]",
-    hoverColor: "hover:bg-[#4361ee]/90",
+    color: "bg-gradient-to-br from-orange-500 to-red-500",
+    hoverColor: "hover:from-orange-600 hover:to-red-600",
   },
   {
     id: "edu",
-    title: "EduTech Edu",
-    description: "הכשרה ופיתוח מקצועי לאנשי חינוך",
     icon: GraduationCap,
-    color: "bg-[#06d6a0]",
-    hoverColor: "hover:bg-[#06d6a0]/90",
+    color: "bg-gradient-to-br from-green-500 to-emerald-500",
+    hoverColor: "hover:from-green-600 hover:to-emerald-600",
   },
   {
     id: "camp",
-    title: "EduTech Camp",
-    description: "מחנות קיץ, מחנות טכנולוגיה ופעילויות מרוכזות",
     icon: Tent,
-    color: "bg-[#fb8500]",
-    hoverColor: "hover:bg-[#fb8500]/90",
+    color: "bg-gradient-to-br from-yellow-500 to-amber-500",
+    hoverColor: "hover:from-yellow-600 hover:to-amber-600",
   },
 ];
 
 export function SubBrandsSection() {
+  const t = useTranslations("home.tracks");
+  const locale = useLocale();
+
   return (
     <Section
       className="bg-gray-50"
-      title="המסלולים שלנו"
-      subtitle="חמישה מסלולים מותאמים לצרכים שונים בעולם הטכנולוגיה"
+      title={t("title")}
+      subtitle={t("subtitle")}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {subBrands.map((brand, index) => (
@@ -64,13 +59,19 @@ export function SubBrandsSection() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group"
           >
-            <div 
-              className={`p-8 rounded-2xl ${brand.color} text-white transition-all duration-300 transform hover:scale-105 ${brand.hoverColor} cursor-pointer`}
-            >
-              <brand.icon className="w-12 h-12 mb-6" />
-              <h3 className="text-2xl font-bold mb-3 font-heebo">{brand.title}</h3>
-              <p className="text-lg font-assistant">{brand.description}</p>
-            </div>
+            <Link href={`/${locale}/tracks/${brand.id}`}>
+              <div
+                className={`p-8 rounded-2xl ${brand.color} ${brand.hoverColor} text-white transition-all duration-300 transform hover:scale-105 cursor-pointer shadow-lg`}
+              >
+                <brand.icon className="w-12 h-12 mb-6" />
+                <h3 className="text-2xl font-bold mb-3">
+                  {t(`${brand.id}.title`)}
+                </h3>
+                <p className="text-lg">
+                  {t(`${brand.id}.description`)}
+                </p>
+              </div>
+            </Link>
           </motion.div>
         ))}
       </div>

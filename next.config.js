@@ -1,27 +1,32 @@
+import createNextIntlPlugin from 'next-intl/plugin';
 
-      /** @type {import("next").NextConfig} */
-      const config = {
-        trailingSlash: true,
-        images: {
-          unoptimized: true,
-          remotePatterns: [
-            {
-              protocol: 'https',
-              hostname: '*',
-              pathname: '**',
-            },
-          ],
-        },
-        eslint: {
-          ignoreDuringBuilds: true,
-        },
-        typescript: {
-          ignoreBuildErrors: true,
-        },
-        webpack: (config, { isServer }) => {
-          config.stats = "verbose";
-          return config;
-        },
-        output: "export"
-      };
-      export default config;
+const withNextIntl = createNextIntlPlugin('./i18n.ts');
+
+/** @type {import("next").NextConfig} */
+const config = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.supabase.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+    formats: ['image/avif', 'image/webp'],
+  },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  experimental: {
+    optimizeCss: true,
+  },
+};
+
+export default withNextIntl(config);
