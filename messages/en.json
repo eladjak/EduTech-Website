@@ -41,6 +41,8 @@
     "tracks": {
       "title": "Our Tracks",
       "subtitle": "Five tailored tracks for different needs in the world of technology",
+      "viewActivities": "View Activities",
+      "contactUs": "Contact Us",
       "ai": {
         "title": "EduTech AI",
         "description": "Advanced AI and cutting-edge technology education"
@@ -152,5 +154,106 @@
     "minLength": "Minimum {min} characters",
     "maxLength": "Maximum {max} characters",
     "generic": "Something went wrong, please try again"
+  },
+  "tracks": {
+    "features": {
+      "title": "What Makes This Track Special",
+      "subtitle": "The benefits and added value you'll receive",
+      "ai": {
+        "practical": {
+          "title": "Practical Learning",
+          "description": "Real projects and hands-on practice with advanced AI tools"
+        },
+        "cutting-edge": {
+          "title": "Cutting-Edge Technologies",
+          "description": "Learn the hottest tools and technologies in the industry"
+        },
+        "certified": {
+          "title": "Professional Certification",
+          "description": "Receive a recognized certificate in the high-tech industry"
+        },
+        "expert-instructors": {
+          "title": "Expert Instructors",
+          "description": "Training by leading AI experts in the industry"
+        }
+      },
+      "kids": {
+        "age-appropriate": {
+          "title": "Age-Appropriate",
+          "description": "Content and teaching methods specially designed for children and teens"
+        },
+        "fun-learning": {
+          "title": "Fun Learning",
+          "description": "Games, challenges, and engaging activities that make learning exciting"
+        },
+        "achievement": {
+          "title": "Achievements & Motivation",
+          "description": "Achievement system that encourages progress and continuous learning"
+        },
+        "flexible": {
+          "title": "Flexible Scheduling",
+          "description": "Various times and tracks that fit your family's routine"
+        }
+      },
+      "pro": {
+        "industry-relevant": {
+          "title": "Industry Relevant",
+          "description": "Updated content required in today's job market"
+        },
+        "certification": {
+          "title": "Professional Certification",
+          "description": "Certificate recognized and valued by employers in the industry"
+        },
+        "networking": {
+          "title": "Networking",
+          "description": "Opportunity to connect with professionals and leading companies"
+        },
+        "career-boost": {
+          "title": "Career Advancement",
+          "description": "Tools and knowledge to advance your professional career"
+        }
+      },
+      "edu": {
+        "teacher-focused": {
+          "title": "Teacher Focused",
+          "description": "Content developed specifically for teachers' and educators' needs"
+        },
+        "practical-tools": {
+          "title": "Practical Tools",
+          "description": "Tools and techniques for immediate classroom implementation"
+        },
+        "modern-methods": {
+          "title": "Modern Methods",
+          "description": "Innovative teaching approaches integrating technology"
+        },
+        "recognition": {
+          "title": "Professional Recognition",
+          "description": "Training certificate recognized by the Ministry of Education"
+        }
+      },
+      "camp": {
+        "intensive": {
+          "title": "Intensive & Concentrated",
+          "description": "Concentrated and intensive learning in a short period"
+        },
+        "group-learning": {
+          "title": "Group Learning",
+          "description": "Teamwork and collaboration with other participants"
+        },
+        "hands-on": {
+          "title": "Hands-On Experience",
+          "description": "Practical projects and building real products"
+        },
+        "completion": {
+          "title": "Project Completion",
+          "description": "Every participant finishes with their own completed project"
+        }
+      }
+    },
+    "activities": {
+      "title": "Track Activities",
+      "subtitle": "Choose the activity that suits you",
+      "coming-soon": "New activities coming soon!"
+    }
   }
 }

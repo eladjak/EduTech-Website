@@ -62,12 +62,23 @@ export default function Footer() {
     setIsSubmitting(true);
 
     try {
-      // TODO: Implement newsletter subscription API
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setEmail("");
-      // Show success message
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setEmail("");
+        alert("נרשמת בהצלחה לניוזלטר!");
+      } else {
+        const data = await response.json();
+        alert(data.error || "משהו השתבש");
+      }
     } catch (error) {
-      // Show error message
+      alert("משהו השתבש, אנא נסה שנית");
     } finally {
       setIsSubmitting(false);
     }
