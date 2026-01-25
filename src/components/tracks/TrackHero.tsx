@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Cpu, Users, Code, GraduationCap, Tent } from "lucide-react";
+import { Cpu, Users, Code, GraduationCap, Tent, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { getTrackGradient } from "@/lib/design-tokens";
 
 const trackIcons = {
   ai: Cpu,
@@ -67,25 +69,32 @@ export function TrackHero({ trackId }: TrackHeroProps) {
             {t(`${trackId}.description`)}
           </p>
 
-          {/* CTA */}
+          {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, type: "spring" }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a
-              href="#activities"
-              className="px-8 py-4 bg-white text-gray-900 rounded-lg font-bold hover:bg-gray-100 transition-colors"
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="bg-white text-gray-900 hover:bg-gray-100 shadow-2xl"
             >
-              {t("viewActivities")}
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-bold hover:bg-white/10 transition-colors"
+              <a href="#activities">
+                <Sparkles className="w-5 h-5" />
+                {t("viewActivities")}
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white/10 backdrop-blur-sm"
             >
-              {t("contactUs")}
-            </a>
+              <a href="#contact">{t("contactUs")}</a>
+            </Button>
           </motion.div>
         </motion.div>
       </div>
