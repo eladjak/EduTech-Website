@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { locales } from "../../../i18n";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "@/components/ui/Toast";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -33,6 +34,7 @@ export default async function LocaleLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>
