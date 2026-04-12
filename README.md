@@ -76,3 +76,9 @@ EduTech-Website/
 ## License
 
 MIT
+
+---
+
+⭐ If you find this useful, please star the repo!
+
+*[README בעברית](README.he.md)*
